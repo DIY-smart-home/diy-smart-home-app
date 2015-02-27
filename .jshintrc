@@ -1,0 +1,98 @@
+{
+  "bitwise": true,
+  "camelcase": true,
+  "curly": true,
+  "eqeqeq": true,
+  "es3": false,
+  "forin": true,
+  "freeze": true,
+  "immed": true,
+  "indent": 2,
+  "latedef": "nofunc",
+  "newcap": true,
+  "noarg": true,
+  "noempty": true,
+  "nonbsp": true,
+  "nonew": true,
+  "plusplus": true,
+  "quotmark": "single",
+  "undef": true,
+  "unused": false,
+  "strict": true,
+  "maxparams": 10,
+  "maxdepth": 5,
+  "maxstatements": 40,
+  "maxcomplexity": 8,
+  "maxlen": false,
+
+  "asi": false,
+  "boss": false,
+  "debug": false,
+  "eqnull": true,
+  "esnext": false,
+  "evil": false,
+  "expr": false,
+  "funcscope": false,
+  "globalstrict": false,
+  "iterator": false,
+  "lastsemic": false,
+  "laxbreak": false,
+  "laxcomma": false,
+  "loopfunc": true,
+  "maxerr": false,
+  "moz": false,
+  "multistr": false,
+  "notypeof": false,
+  "proto": false,
+  "scripturl": false,
+  "shadow": false,
+  "sub": true,
+  "supernew": false,
+  "validthis": false,
+  "noyield": false,
+
+  "browser": true,
+  "node": true,
+
+  "globals": {
+    "angular": false,
+    "Meteor": false,
+    "DDP": false,
+    "Mongo": false, //Meteor.Collection renamed to Mongo.Collection
+    "Session": false,
+    "Accounts": false,
+    "Template": false,
+    "Blaze": false,  //UI is being renamed Blaze
+    "UI": false,
+    "Match": false,
+    "check": false,
+    "Tracker": false, //Deps renamed to Tracker
+    "Deps": false,
+    "ReactiveVar": false,
+    "EJSON": false,
+    "HTTP": false,
+    "Email": false,
+    "Assets": false,
+    "Handlebars": false,      // https://github.com/meteor/meteor/wiki/Handlebars
+    "Package": false,
+    "App": false, //mobile-config.js
+    // Meteor internals
+    "DDPServer": false,
+    "global": false,
+    "Log": false,
+    "MongoInternals": false,
+    "process": false,
+    "WebApp": false,
+    "WebAppInternals": false,
+    // globals useful when creating Meteor packages
+    "Npm": false,
+    "Tinytest": false,
+    // common Meteor packages
+    "Random": false,
+    "_": false,               // Underscore.js
+    "$": false,               // jQuery
+    "Router": false,           // iron-router
+
+    "SimpleSchema": false
+  }
+}
