@@ -1,0 +1,34 @@
+<div class="ui grid">
+  <div class="row">
+
+    <div class="ui one column centered page grid">
+      <div class="eight wide column">
+        <h3 class="ui top attached header">
+          The Dice of Destiny
+        </h3>
+
+        <div class="ui attached segment">
+          <div ng-controller="LoginCtrl as login" class="ui form">
+            <div class="ui error message">
+              <div class="header">Error!</div>
+              <p>{{login.errorMsg}}</p>
+            </div>
+
+            <div class="required field">
+              <label>Nickname:</label>
+              <div class="ui icon input">
+                <input placeholder="Nickname" ng-model="login.user.profile.name" name="nickname" type="text"/>
+                <i class="user icon"></i>
+              </div>
+            </div>
+
+            <button class="ui labeled icon primary button" ng-click="login.createAnonymousUser()">
+              <i class="icon user"></i>
+              Enter
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

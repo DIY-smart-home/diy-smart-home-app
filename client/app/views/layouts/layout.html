@@ -1,0 +1,14 @@
+<head>
+  <title>DYI Smart Home</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+  <base href="/">
+</head>
+<body>
+  <div ng-app="dsh" id="dsh-app">
+
+    <ng-include src="'client/app/views/partials/general-menu.ng.html'"></ng-include>
+    <div ui-view>
+      <!-- don't put anything here - ui-router is in control -->
+    </div>
+  </div>
+</body>

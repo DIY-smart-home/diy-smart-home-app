@@ -1,0 +1,8 @@
+<!-- <ng-include src='client/app/views/partials/account-form.ng.html'> -->
+<ng-include ng-if="!currentUser" src='client/app/views/partials/account-form-simple.ng.html'></ng-include>
+<div ng-if="currentUser">
+  <h2>
+    Hello "{{currentUser.profile.name}}" please, go to the
+  </h2>
+
+</div>

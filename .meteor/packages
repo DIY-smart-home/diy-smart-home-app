@@ -5,5 +5,15 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
+#autopublish
 insecure
+
+less
+twbs:bootstrap
+
+accounts-password
+accounts-ui
+urigo:angular
+angularui:angular-ui-router
+aldeed:collection2
+matb33:collection-hooks
