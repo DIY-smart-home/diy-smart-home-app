@@ -12,4 +12,4 @@ mqttClient.on("error", function(param) {
   console.log("Wahhhh");
 });
 
-mqttClient.subscribe("testD");
+mqttClient.subscribe("/testD");
