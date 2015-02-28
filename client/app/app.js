@@ -36,7 +36,7 @@
           url: '/',
           templateUrl: 'client/app/views/home.ng.html',
           controller: 'HomeCtrl',
-          controllerAs: 'home'
+          controllerAs: 'homeCtrl'
         })
         .state('login', {
           url: '/login',
@@ -56,7 +56,7 @@
           url: '/dev',
           templateUrl: 'client/app/views/dev.ng.html',
           controller: 'DevCtrl',
-          controllerAs: 'dev'
+          controllerAs: 'devCtrl'
         });
 
       $urlRouterProvider.otherwise("/");

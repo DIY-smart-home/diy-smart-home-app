@@ -8,21 +8,21 @@
         </h3>
 
         <div class="ui attached segment">
-          <div ng-controller="LoginCtrl as login" class="ui form">
+          <div ng-controller="LoginCtrl as loginCtrl" class="ui form">
             <div class="ui error message">
               <div class="header">Error!</div>
-              <p>{{login.errorMsg}}</p>
+              <p>{{loginCtrl.errorMsg}}</p>
             </div>
 
             <div class="required field">
               <label>Nickname:</label>
               <div class="ui icon input">
-                <input placeholder="Nickname" ng-model="login.user.profile.name" name="nickname" type="text"/>
+                <input placeholder="Nickname" ng-model="loginCtrl.user.profile.name" name="nickname" type="text"/>
                 <i class="user icon"></i>
               </div>
             </div>
 
-            <button class="ui labeled icon primary button" ng-click="login.createAnonymousUser()">
+            <button class="ui labeled icon primary button" ng-click="loginCtrl.createAnonymousUser()">
               <i class="icon user"></i>
               Enter
             </button>

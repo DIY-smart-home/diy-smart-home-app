@@ -1,4 +1,4 @@
-<nav ng-controller="MenuCtrl as menu" class="ui menu inverted navbar">
+<nav ng-controller="MenuCtrl as menuCtrl" class="ui menu inverted navbar">
   <a ui-sref="home" ui-sref-active="active" class="brand item">
     DIY Smart Home <i class="home icon"></i>
   </a>
@@ -9,7 +9,7 @@
     <div class="item" ng-show="!!currentUser">
       <i class="user icon"></i> {{currentUser.profile.name}}
     </div>
-    <a class="ui item" ng-hide="!currentUser" ng-click="menu.logout()">
+    <a class="ui item" ng-hide="!currentUser" ng-click="menuCtrl.logout()">
       logout
     </a>
   </div>
