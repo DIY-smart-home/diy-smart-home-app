@@ -1,7 +1,11 @@
 // Library only shared with server
 console.log("started");
-mqttClient = mqtt.connect('mqtt://test.mosquitto.org', {
-  clientId: "fromServer"
+//var x = 'mqtt://test.mosquitto.org';
+
+var x = 'mqtt://192.168.43.9';
+
+mqttClient = mqtt.connect(x, {
+  clientId: "fromServer2"
 });
 
 mqttClient.on("connect", function() {
