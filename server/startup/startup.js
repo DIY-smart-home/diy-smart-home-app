@@ -11,9 +11,22 @@ Meteor.startup(function () {
     console.log("Wahhhh");
   });
 
-  mqttClient.subscribe("testD");
+  mqttClient.subscribe("/testD");
 
-  mqttClient.publish("testD", "blaaaah", function() {
+  mqttClient.on("message", function(topic, message) {
+    var msg = {
+      message: message.toString(),
+      topic: topic,
+      ts: new Date()
+    };
+
+    console.log(msg);
+
+    //self.added('messages', new Date().toString(), msg);
+  });
+
+
+  mqttClient.publish("/testD", "blaaaah", function() {
     console.log("Sent Sir!");
   });
 
