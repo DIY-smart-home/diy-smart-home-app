@@ -13,3 +13,13 @@ mqttClient.on("error", function(param) {
 });
 
 mqttClient.subscribe("/testD");
+
+mqttClient.on("message", function(topic, message) {
+  var msg = {
+    message: message.toString(),
+    topic: topic,
+    ts: new Date()
+  };
+
+  console.log(msg);
+});
