@@ -1,6 +1,6 @@
 Meteor.publish("messages", function () {
   var self = this;
-  mqttClient.on("message", function(topic, message) {
+  Mqtt.getClient().on("message", function(topic, message) {
     var msg = {
       message: message.toString(),
       topic: topic,

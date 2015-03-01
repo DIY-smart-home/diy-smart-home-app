@@ -1,16 +1,10 @@
-<nav ng-controller="MenuCtrl as menuCtrl" class="ui menu inverted navbar">
-  <a ui-sref="home" ui-sref-active="active" class="brand item">
-    DIY Smart Home <i class="home icon"></i>
-  </a>
-  <a ui-sref="dev" ui-sref-active="active" class="item">
-     Dev
-  </a>
-  <div class="right menu">
-    <div class="item" ng-show="!!currentUser">
-      <i class="user icon"></i> {{currentUser.profile.name}}
-    </div>
-    <a class="ui item" ng-hide="!currentUser" ng-click="menuCtrl.logout()">
-      logout
-    </a>
-  </div>
+<nav ng-controller="MenuCtrl as menuCtrl" class="col-lg-2 col-md-2 col sm-2">
+    <ul class="menu col-lg-12 col-md-12 col-sm-12 padding-fix">
+        <li class="menuItem">Dashboard</li>
+        <li class="menuItem">Temperature</li>
+        <li class="menuItem">Lights kitchen</li>
+        <li class="menuItem">Fridge</li>
+        <li class="menuItem">TV</li>
+        <li class="menuItem">About</li>
+    </ul>
 </nav>

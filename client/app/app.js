@@ -52,6 +52,12 @@
         //  url: '/about',
         //  templateUrl: 'client/app/views/about.ng.html'
         //})
+        .state('bee', {
+          url: '/bee/:beeId',
+          templateUrl: 'client/app/views/bee-details.ng.html',
+          controller: 'BeeCtrl',
+          controllerAs: 'beeCtrl'
+        })
         .state('dev', {
           url: '/dev',
           templateUrl: 'client/app/views/dev.ng.html',

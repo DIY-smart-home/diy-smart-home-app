@@ -1,0 +1,59 @@
+body {
+    background-color: #b8b8b8;
+    padding-top: 20px;
+}
+
+.wrapper {
+}
+
+nav {
+    border: 1px solid #e2e2e2;
+    box-shadow: 4px 4px 4px grey;
+    border-radius: 10px;
+    padding-right: 5px !important;
+}
+
+nav ul {
+
+}
+
+nav li {
+    list-style-type: none;
+    font-size: 16px;
+    width: 95%;
+    padding: 5px;
+}
+
+nav li:hover {
+    border: 1px solid #6E70FA;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #6E70FA;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.mainLayout {
+    border: 1px solid #e2e2e2;
+    box-shadow: 4px 4px 4px grey;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.padding-fix {
+    padding-top: 15px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.mainLayout .dashboardContainer .dashboardBee {
+    border: 1px solid #e2e2e2;
+    box-shadow: 4px 4px 4px grey;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 25px;
+    height: 250px;
+}
+
+.status {
+    font-size: 1.6em;
+}

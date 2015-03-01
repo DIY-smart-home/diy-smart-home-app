@@ -1,8 +1,34 @@
-<!-- <ng-include src='client/app/views/partials/account-form.ng.html'> -->
-<ng-include ng-if="!currentUser" src='client/app/views/partials/account-form-simple.ng.html'></ng-include>
-<div ng-if="currentUser">
-  <h2>
-    Hello "{{currentUser.profile.name}}" please, go to the
-  </h2>
-
+<div class="mainLayout col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <h1 class="title">Dashboard</h1>
+    <p>
+        Here you have a quick access of your favorite bees.
+    </p>
+    <div class="dashboardContainer col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="dashboardBee">
+                <h1>Temperature</h1>
+                <p>
+                    This is a test dashboard for the temperature sensor. Enjoy it!
+                </p>
+                <p class="status">
+                    <strong>Temperature: {{ homeCtrl.temperature }}&deg; C</strong>
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="dashboardBee">
+                <h1>Lamp</h1>
+                <p>
+                    This is a simple test dashboard that helps you to control a lamp.
+                </p>
+                <p>
+                    <div class="status"><strong>Status: <span ng-show="homeCtrl.isLampOn">On</span><span ng-hide="homeCtrl.isLampOn">Off</span></strong></div>
+                    <div>
+                        <button class="btn btn-primary" ng-click="homeCtrl.powerOn('/lamp', 1)" ng-hide="homeCtrl.isLampOn">Turn On</button>
+                        <button class="btn btn-primary" ng-click="homeCtrl.powerOn('/lamp', 0)"  ng-show="homeCtrl.isLampOn">Turn Off</button>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
 </div>

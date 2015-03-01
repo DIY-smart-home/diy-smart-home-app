@@ -4,11 +4,11 @@
   <base href="/">
 </head>
 <body>
-  <div ng-app="dsh" id="dsh-app">
+  <div ng-app="dsh" id="dsh-app" class="wrapper col-lg-11 col-md-11 col-sm-11">
 
     <ng-include src="'client/app/views/partials/general-menu.ng.html'"></ng-include>
-    <div ui-view>
+    <main ui-view class="col-lg-10 col-md-10 col-sm-10">
       <!-- don't put anything here - ui-router is in control -->
-    </div>
+    </main>
   </div>
 </body>
